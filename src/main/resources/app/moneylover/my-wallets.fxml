@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="450.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.moneylover.controllers.MyWalletsController">
+    <children>
+        <Button fx:id="homeBtn" layoutX="-2.0" layoutY="-1.0" mnemonicParsing="false" onAction="#switchToSceneHome" prefHeight="25.0" prefWidth="164.0" text="HOME" />
+        <Button fx:id="transactionsBtn" layoutX="325.0" layoutY="-1.0" mnemonicParsing="false" onAction="#switchToSceneTransactions" prefHeight="25.0" prefWidth="164.0" text="TRANSACTIONS" />
+        <Button fx:id="myWalletsBtn" layoutX="161.0" layoutY="-1.0" mnemonicParsing="false" onAction="#switchToSceneMyWallets" prefHeight="25.0" prefWidth="164.0" text="MY WALLETS" />
+        <Button fx:id="statisticalBtn" layoutX="486.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="164.0" text="STATISTICAL" />
+      <TableView layoutX="18.0" layoutY="83.0" prefHeight="353.0" prefWidth="614.0">
+        <columns>
+          <TableColumn prefWidth="223.0" text="Wallet" />
+          <TableColumn prefWidth="193.0" text="Total Money" />
+            <TableColumn prefWidth="197.0" text="Current Transacted Money" />
+        </columns>
+      </TableView>
+      <Button layoutX="105.0" layoutY="44.0" mnemonicParsing="false" text="Edit Wallet" />
+      <Button layoutX="555.0" layoutY="44.0" mnemonicParsing="false" text="New Wallet" />
+      <Button layoutX="18.0" layoutY="44.0" mnemonicParsing="false" text="Add Money" />
+      <Button layoutX="190.0" layoutY="44.0" mnemonicParsing="false" text="Delete Wallet" />
+
+    </children>
+</AnchorPane>
